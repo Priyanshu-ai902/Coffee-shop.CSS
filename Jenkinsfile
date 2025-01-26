@@ -5,7 +5,7 @@ pipeline {
         
         stage("build") {
             steps {
-                echo 'building the application...'
+                echo 'building the application in stage configeration...'
             }
         }
         stage("test") {
@@ -15,7 +15,7 @@ pipeline {
         }
         stage("deploy") {
            steps {
-                echo 'deploying the application...'
+                echo 'deploying the application in prod...'
             }
         }
     }   
